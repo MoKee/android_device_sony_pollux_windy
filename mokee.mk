@@ -15,8 +15,8 @@
 # limitations under the License.
 #
 
-# Inherit common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit common MK stuff
+$(call inherit-product, vendor/mk/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configurations
 $(call inherit-product, device/sony/pollux_windy/device.mk)
@@ -26,7 +26,7 @@ TARGET_SCREEN_HEIGHT := 1200
 TARGET_SCREEN_WIDTH := 1920
 
 # Device identifications
-PRODUCT_NAME := lineage_pollux_windy
+PRODUCT_NAME := mk_pollux_windy
 PRODUCT_DEVICE := pollux_windy
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
